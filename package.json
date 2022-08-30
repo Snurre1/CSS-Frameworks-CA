@@ -1,0 +1,31 @@
+{
+  "name": "ca-project",
+  "version": "0.0.1",
+  "description": "project for school",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snurre1/CSS-Frameworks-CA.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Thomas Henriksen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snurre1/CSS-Frameworks-CA/issues"
+  },
+  "homepage": "https://github.com/Snurre1/CSS-Frameworks-CA#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.54.6"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
