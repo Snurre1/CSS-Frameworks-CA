@@ -10758,5 +10758,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+h1, .h1 {
+  margin-top: 10px;
+}
+
+body {
+  background-color: #ceedcf;
+}
 
 /*# sourceMappingURL=styles.css.map */
