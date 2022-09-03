@@ -5,107 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage for Heya</title>
-    
-    <link rel="stylesheet" href="/dist/css/styles.css"/>
+
+    <link rel="stylesheet" href="/dist/css/styles.css" />
   </head>
   <body>
-    <header
-      ><div class="container"
-        ><div class="text-center"><p class="fs-1">Heya</p>
-</div></div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html"
-                    >Heya</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login.html">Login</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="profile.html">Profile page</a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit"
-                  >Search</button
+    <header>
+      <div class="container">
+        <div class="text-center">
+          <p class="fs-1">Heya</p>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Heya</a
                 >
-              </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile page</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="mx-auto m-4 text-center">
+        <h1>Posts</h1>
+      </div>
+      <div class="container">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Username</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Your post</span>
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            placeholder="Type here"
+          ></textarea>
+          <button type="button" class="btn btn-dark">Submit</button>
+        </div>
+      </div>
+      <section class="m-5">
+        <div class="container">
+          <div class="row">
+            <div class="container border border-secondary border-1">
+              <div class="col-3 p-3">
+                <img
+                  src="images/avatar.png"
+                  class="img-thumbnail"
+                  alt="profile picture"
+                />
+                <p class="h6">Thomas</p>
+              </div>
+              <div class="col-sm-9 p-3">
+                <p>Hot damn! the new trump app is out:D:D</p>
+              </div>
+            </div>
+            <div class="container border border-secondary border-1">
+              <div class="col-3 p-3">
+                <img
+                  src="images/avatar.png"
+                  class="img-thumbnail"
+                  alt="profile picture"
+                />
+                <p class="h6">Thomas</p>
+              </div>
+              <div class="col-sm-9 p-3">
+                <p>My post: WE GOT THIS!</p>
+              </div>
+            </div>
+            <div class="container border border-secondary border-1">
+              <div class="col-3 p-3">
+                <img
+                  src="images/avatar.png"
+                  class="img-thumbnail"
+                  alt="profile picture"
+                />
+                <p class="h6">Thomas</p>
+              </div>
+              <div class="col-sm-9 p-3">
+                <p>My post: The world must be flat?</p>
+              </div>
             </div>
           </div>
-        </nav>
-      </div></header
-    ><main><div class="mx-auto m-4 text-center"><h1>Posts</h1></div>
-    <div class="container">
-  <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">Username</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>
-<div class="input-group">
-  <span class="input-group-text">Your post</span>
-  <textarea class="form-control" aria-label="With textarea" placeholder="Type here"></textarea>
-  <button type="button" class="btn btn-dark">Submit</button>
-</div>
-</div>
-    
-        <section class="m-5">
-        <div class="container border border-secondary border-1" >
-    <div class="col-3 p-3">
-  <img src="images/avatar.png" class="img-thumbnail" alt="profile picture">
-  <p class="h6">Thomas</p>
-</div>
-<div class="col-sm-9 p-3 border">
-  <p>My post: Hot damn! the trump app is out now:D:D</p>
-</div>
-</div>
-<div class="container border border-secondary border-1">
-  
-
-    <div class="col-3 p-3">
-  <img src="images/avatar.png" class="img-thumbnail" alt="profile picture">
-  <p class="h6">Thomas</p>
-</div>
-<div class="col-sm-9 p-3 border">
-  <p>My post: WE GOT THIS!</p>
-</div>
-</div>
-<div class="container border border-secondary border-1">
-  
-
-    <div class="col-3 p-3">
-  <img src="images/avatar.png" class="img-thumbnail" alt="profile picture">
-  <p class="h6">Thomas</p>
-</div>
-<div class="col-sm-9 p-3 border">
-  <p>My post: The world must be flat?</p>
-</div>
-</div>
-    </section>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="container text-center">
- &copy;
-</div></footer>
+      <div class="container text-center"> &copy; </div>
+    </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
