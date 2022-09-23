@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "school project",
   "main": "index.js",
+   "dependencies": {
+    "boostrap": "^2.0.0"
+  },
   "devDependencies": {
     "bootstrap": "^5.2.1",
     "live-server": "^1.2.2",
@@ -29,4 +32,5 @@
     "url": "https://github.com/Snurre1/CSS-Frameworks-CA/issues"
   },
   "homepage": "https://github.com/Snurre1/CSS-Frameworks-CA#readme"
+ 
 }
