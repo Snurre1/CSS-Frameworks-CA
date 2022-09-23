@@ -1,9 +1,17 @@
 {
-  "name": "ca-project",
+  "name": "social-media-app",
   "version": "0.0.1",
-  "description": "project for school",
+  "description": "school project",
   "main": "index.js",
+   "dependencies": {
+    "boostrap": "^2.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.55.0"
+  },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass src/scss:dist/css",
     "watch": "sass --watch src/scss:dist/css & live-server"
   },
@@ -12,21 +20,16 @@
     "url": "git+https://github.com/Snurre1/CSS-Frameworks-CA.git"
   },
   "keywords": [
+    "social",
+    "media",
     "bootstrap",
     "sass"
   ],
-  "author": "Thomas Henriksen",
+  "author": "Thomas Henriksen <ThoHen93690@stud.noroff.no>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Snurre1/CSS-Frameworks-CA/issues"
   },
-  "homepage": "https://github.com/Snurre1/CSS-Frameworks-CA#readme",
-  "devDependencies": {
-    "live-server": "^1.2.2",
-    "sass": "^1.54.6"
-  },
-  "dependencies": {
-    "bootstrap": "^5.2.0"
-  }
+  "homepage": "https://github.com/Snurre1/CSS-Frameworks-CA#readme"
+ 
 }
-
