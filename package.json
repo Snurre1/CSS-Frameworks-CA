@@ -4,7 +4,7 @@
   "description": "school project",
   "main": "index.js",
    "dependencies": {
-    "boostrap": "^2.0.0"
+    "bootstrap": "^2.0.0"
   },
   "devDependencies": {
     "live-server": "^1.2.2",
