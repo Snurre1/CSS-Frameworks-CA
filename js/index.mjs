@@ -2,8 +2,13 @@ import * as templates from "./api/templates/index.mjs";
 import * as postMethods from "./api/posts/index.mjs";
 
 import * as listeners from "./handlers/index.mjs";
-
-listeners.setCreatePostFormListener();
+import * as posts from "./api/posts/index.mjs";
+const path = location.pathname;
+if (path === "/index.html") {
+  listeners.setCreatePostFormListener();
+} else if (path === "/update.html") {
+  listeners.setUpdateFormListener();
+}
 
 async function testTemplate() {
   const posts = await postMethods.getPosts();

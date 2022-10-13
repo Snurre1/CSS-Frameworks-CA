@@ -11,13 +11,13 @@ export function postTemplate(postData) {
   const imageContainer = document.createElement("div");
   imageContainer.classList.add("col-3", "p-3");
   post.append(imageContainer);
-
-  const image = document.createElement("img");
-  image.src = `${postData.media}`;
-  image.alt = `image from ${postData.title}`;
-  image.classList.add("img-thumbnail", "border", "border-secondary");
-  imageContainer.append(image);
-
+  if (postData.media) {
+    const image = document.createElement("img");
+    image.src = `${postData.media}`;
+    image.alt = `image from ${postData.title}`;
+    image.classList.add("img-thumbnail", "border", "border-secondary");
+    imageContainer.append(image);
+  }
   const titlePost = document.createElement("p");
   titlePost.classList.add("h6");
   titlePost.innerText = `${postData.title}`;
@@ -35,8 +35,9 @@ export function postTemplate(postData) {
   buttonContainer.classList.add("container");
   postContainer.append(buttonContainer);
 
-  const submitButton = document.createElement("button");
+  const submitButton = document.createElement("a");
   submitButton.type = "submit";
+  submitButton.href = `/update.html?id=${postData.id}`;
   submitButton.classList.add("btn", "btn-dark");
   submitButton.innerText = "Edit";
   buttonContainer.append(submitButton);
