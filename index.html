@@ -66,9 +66,8 @@
           <div class="mb-3 w-50 mx-auto">
             <label for="" class="col-form-label">Title:</label>
             <input
-              id="yourTitle"
               type="text"
-              name="text"
+              name="title"
               class="form-control"
               placeholder="Your title"
               required
@@ -77,9 +76,8 @@
           <div class="mb-3 w-50 mx-auto">
             <label for="" class="col-form-label">Your Post:</label>
             <textarea
-              id="yourPost"
               type="text"
-              name="text"
+              name="body"
               class="form-control"
               rows="5"
               cols="20"
@@ -87,6 +85,16 @@
               required
             ></textarea>
           </div>
+          <div class="mb-3 w-50 mx-auto">
+            <label for="" class="col-form-label">Tags</label>
+            <input
+              type="text"
+              name="tags"
+              class="form-control"
+              placeholder="Your Tags"
+            />
+          </div>
+          <div class="mb-3 w-50 mx-auto"> </div>
           <div class="container text-center">
             <button type="submit" class="btn btn-dark">Publish</button>
           </div>
@@ -94,36 +102,14 @@
       </form>
       <section class="m-5">
         <div class="container">
-          <div class="row">
-            <div class="row">
-              <div
-                class="container border border-secondary border-1 w-75 bg-light"
-              >
-                <div class="col-3 p-3">
-                  <img
-                    src="images/avatar.png"
-                    class="img-thumbnail border border-secondary"
-                    alt="profile picture"
-                  />
-                  <p class="h6">Thomas</p>
-                </div>
-                <div class="col-sm-9 p-3">
-                  <p>My post: Hot damn! the new trump app is out:D:D</p>
-                  <div class="container">
-                    <button type="button" class="btn btn-dark">Edit</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row" id="postContent"> </div>
         </div>
       </section>
     </main>
     <footer>
       <div class="container text-center"> &copy; </div>
     </footer>
-    <script type="module" src="js/fetchscript.mjs"></script>
-    <script type="module" src="js/api/posts/index.mjs"></script>
+    <script type="module" src="js/index.mjs"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
