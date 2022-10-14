@@ -15,12 +15,12 @@ if (path === "/index.html") {
 } else if (path === "/delete.html") {
   listeners.setRemovePostFormListener();
 }
-/*
+
 async function testTemplate() {
   const posts = await postMethods.getPosts();
   const container = document.querySelector("#postContent");
   templates.renderPostTemplates(posts, container);
 }
 testTemplate();
-*/
+
 filterPosts();

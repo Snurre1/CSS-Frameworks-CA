@@ -2,9 +2,9 @@ import { API_SOCIAL_URL } from "../api/constants.mjs";
 import { authFetch } from "../api/authFetch.mjs";
 
 const action = "/posts";
-const container = document.querySelector(".targetme");
+const container = document.querySelector(".targetMe");
 export async function filterPosts() {
-  const response = await authFetch(`${API_SOCIAL_URL}${action}/limit=10000`);
+  const response = await authFetch(`${API_SOCIAL_URL}${action}`);
   const result = await response.json();
   let num = document.querySelector("#num");
   // Handle number changes
@@ -12,7 +12,6 @@ export async function filterPosts() {
     // As a number
     let val = num.valueAsNumber;
     for (let i = 0; i < result.length; i++) {
-      console.log(result[i].id);
       if (result[i].id === val) {
         container.innerHTML += `<div class="container border border-secondary border-1 w-75 bg-light">
                                     <div class="col-3 p-3">
