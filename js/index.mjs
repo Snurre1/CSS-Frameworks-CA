@@ -10,6 +10,8 @@ if (path === "/index.html") {
   listeners.setUpdateFormListener();
 } else if (path === "/profile.html") {
   listeners.setUpdateProfileListener();
+} else if (path === "/delete.html") {
+  listeners.setRemovePostFormListener();
 }
 
 async function testTemplate() {

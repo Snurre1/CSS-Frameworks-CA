@@ -42,6 +42,17 @@ export function postTemplate(postData) {
   submitButton.innerText = "Edit";
   buttonContainer.append(submitButton);
 
+  const deleteButtonContainer = document.createElement("div");
+  deleteButtonContainer.classList.add("container");
+  postContainer.append(deleteButtonContainer);
+
+  const deleteButton = document.createElement("a");
+  deleteButton.type = "submit";
+  deleteButton.href = `/delete.html?id=${postData.id}`;
+  deleteButton.classList.add("btn", "btn-dark");
+  deleteButton.innerText = "Delete";
+  deleteButtonContainer.append(deleteButton);
+
   return post;
 }
 
