@@ -10769,4 +10769,9 @@ textarea.form-control-lg {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.form-control:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /*# sourceMappingURL=styles.css.map */

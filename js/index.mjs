@@ -8,11 +8,14 @@ if (path === "/index.html") {
   listeners.setCreatePostFormListener();
 } else if (path === "/update.html") {
   listeners.setUpdateFormListener();
+} else if (path === "/profile.html") {
+  listeners.setUpdateProfileListener();
 }
-
+/*
 async function testTemplate() {
   const posts = await postMethods.getPosts();
   const container = document.querySelector("#postContent");
   templates.renderPostTemplates(posts, container);
 }
 testTemplate();
+*/
