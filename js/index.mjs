@@ -11,11 +11,10 @@ if (path === "/index.html") {
 } else if (path === "/profile.html") {
   listeners.setUpdateProfileListener();
 }
-/*
+
 async function testTemplate() {
   const posts = await postMethods.getPosts();
   const container = document.querySelector("#postContent");
   templates.renderPostTemplates(posts, container);
 }
 testTemplate();
-*/
