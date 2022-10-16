@@ -72,62 +72,91 @@
               <p>Name: Thomas</p>
               <p>Based: Porsgrunn</p>
               <p>Age: Too damn old</p>
+              <div class="container text-center mt-4">
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  data-bs-whatever="@getbootstrap"
+                  >Update Profile</button
+                >
+              </div>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"
+                        >Update Profile
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="editProfile">
+                        <div class="mb-3">
+                          <label for="" class="col-form-label">Name:</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="name"
+                            disabled
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="" class="col-form-label">E-mail:</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            disabled
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="" class="col-form-label">Banner</label>
+                          <input
+                            type="url"
+                            class="form-control"
+                            name="banner"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="" class="col-form-label">Avatar</label>
+                          <input
+                            type="url"
+                            class="form-control"
+                            name="avatar"
+                          />
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                            >Close</button
+                          >
+                          <button type="submit" class="btn btn-primary"
+                            >Register</button
+                          >
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <div class="mx-auto m-4 text-center">
-                <h3>My posts</h3>
-              </div>
-              <div class="row">
-                <div
-                  class="container border border-secondary border-1 bg-light"
-                >
-                  <div class="col-3 p-3">
-                    <img
-                      src="images/avatar.png"
-                      class="img-thumbnail"
-                      alt="profile picture"
-                    />
-                    <p class="h6">Thomas</p>
-                  </div>
-                  <div class="col-sm-9 p-3">
-                    <p>My post: Hot damn! the trump app is out now:D:D</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div
-                  class="container border border-secondary border-1 bg-light"
-                >
-                  <div class="col-3 p-3">
-                    <img
-                      src="images/avatar.png"
-                      class="img-thumbnail"
-                      alt="profile picture"
-                    />
-                    <p class="h6">Thomas</p>
-                  </div>
-                  <div class="col-sm-9 p-3">
-                    <p>My post: WE GOT THIS!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div
-                  class="container border border-secondary border-1 bg-light"
-                >
-                  <div class="col-3 p-3">
-                    <img
-                      src="images/avatar.png"
-                      class="img-thumbnail"
-                      alt="profile picture"
-                    />
-                    <p class="h6">Thomas</p>
-                  </div>
-                  <div class="col-sm-9 p-3">
-                    <p>My post: The world must be flat?</p>
-                  </div>
-                </div>
-              </div>
+            <div class="col text-center">
+              <h3>My Posts</h3>
             </div>
           </div>
         </div>
@@ -136,6 +165,7 @@
     <footer class="mt-auto">
       <div class="container text-center"> &copy; </div>
     </footer>
+    <script type="module" src="js/index.mjs"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

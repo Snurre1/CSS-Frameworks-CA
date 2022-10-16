@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage for Heya</title>
+    <title>Search page for Heya</title>
+
     <link rel="stylesheet" href="/dist/css/styles.css" />
   </head>
   <body class="bg-primary">
@@ -58,57 +59,29 @@
     </header>
     <main>
       <div class="mx-auto m-4 text-center">
-        <h1>Posts</h1>
+        <h1>Search</h1>
       </div>
-      <form action="/index.html" id="postForm">
+      <form id="searchForm">
         <div class="container-sm p-5">
           <div class="mb-3 w-50 mx-auto">
-            <label for="" class="col-form-label">Title:</label>
+            <label for="" class="col-form-label">ID:</label>
             <input
-              type="text"
-              name="title"
+              id="num"
+              type="number"
+              name="search"
               class="form-control"
-              placeholder="Your title"
+              placeholder="Search for an ID"
               required
-            />
-          </div>
-          <div class="mb-3 w-50 mx-auto">
-            <label for="" class="col-form-label">Your Post:</label>
-            <textarea
-              type="text"
-              name="body"
-              class="form-control"
-              rows="5"
-              cols="20"
-              placeholder="type here"
-              required
-            ></textarea>
-          </div>
-          <div class="mb-3 w-50 mx-auto">
-            <label for="" class="col-form-label">Tags</label>
-            <input
-              type="text"
-              name="tags"
-              class="form-control"
-              placeholder="Your Tags"
             />
           </div>
           <div class="container text-center">
-            <button type="submit" class="btn btn-dark">Publish</button>
-          </div>
-          <div class="container text-center p-3">
-            <a type="submit" class="btn btn-dark" href="/search.html">Search</a>
-          </div>
-          <div class="container text-center p-3">
-            <a type="submit" class="btn btn-dark" href="/searchprofiles.html"
-              >Search Profile</a
-            >
+            <button type="submit" class="btn btn-dark">Search</button>
           </div>
         </div>
       </form>
       <section class="m-5">
         <div class="container">
-          <div class="row" id="postContent"> </div>
+          <div class="row targetMe"> </div>
         </div>
       </section>
     </main>
