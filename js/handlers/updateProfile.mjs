@@ -19,7 +19,7 @@ export async function setUpdateProfileListener() {
       const formData = new FormData(form);
       const profile = Object.fromEntries(formData.entries());
 
-      // updateProfile(profile);
+      updateProfile(profile);
     });
   }
 }

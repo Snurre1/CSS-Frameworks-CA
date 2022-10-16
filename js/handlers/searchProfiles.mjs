@@ -18,7 +18,6 @@ export async function searchProfiles() {
     });
     container.innerHTML = "";
     for (let i = 0; i < newArray.length; i++) {
-      console.log(newArray[i]);
       container.innerHTML += `<div class="container border border-secondary border-1 w-75 bg-light">
                                     <div class="col-3 p-3">
                                         <p class="h6">Name: ${newArray[i].name}
