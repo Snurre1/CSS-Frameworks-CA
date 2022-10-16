@@ -6,9 +6,6 @@ export async function setRemovePostFormListener() {
   const id = url.searchParams.get("id");
   if (form) {
     const post = await removePost(id);
-    form.title.value = post.title;
-    form.body.value = post.body;
-    form.tags.value = post.tags;
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();

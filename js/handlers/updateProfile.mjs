@@ -3,7 +3,7 @@ import { load } from "../api/storage/index.mjs";
 
 export async function setUpdateProfileListener() {
   const form = document.querySelector("#editProfile");
-  console.log(form);
+
   if (form) {
     const { name, email } = load("profile");
 
@@ -19,7 +19,7 @@ export async function setUpdateProfileListener() {
       const formData = new FormData(form);
       const profile = Object.fromEntries(formData.entries());
 
-      updateProfile(profile);
+      // updateProfile(profile);
     });
   }
 }

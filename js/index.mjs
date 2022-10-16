@@ -5,6 +5,7 @@ import * as listeners from "./handlers/index.mjs";
 import * as posts from "./api/posts/index.mjs";
 import { authFetch } from "./api/authFetch.mjs";
 import { filterPosts } from "./handlers/filterPost.mjs";
+import { searchProfiles } from "./handlers/searchProfiles.mjs";
 const path = location.pathname;
 if (path === "/index.html") {
   listeners.setCreatePostFormListener();
@@ -24,3 +25,5 @@ async function testTemplate() {
 testTemplate();
 
 filterPosts();
+
+searchProfiles();

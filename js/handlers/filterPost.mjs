@@ -6,9 +6,10 @@ const container = document.querySelector(".targetMe");
 export async function filterPosts() {
   const response = await authFetch(`${API_SOCIAL_URL}${action}`);
   const result = await response.json();
+
   let num = document.querySelector("#num");
   // Handle number changes
-  num.addEventListener("input", function () {
+  num.addEventListener("input", () => {
     // As a number
     let val = num.valueAsNumber;
     for (let i = 0; i < result.length; i++) {
@@ -24,8 +25,6 @@ export async function filterPosts() {
                                         <p>Your post: ${result[i].body}
                                         </p>
                                     </div>
-
-                                    
                                 </div>`;
       }
     }

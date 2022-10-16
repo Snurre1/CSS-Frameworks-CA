@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delete page for Heya</title>
+    <title>Search profile page for Heya</title>
 
     <link rel="stylesheet" href="/dist/css/styles.css" />
   </head>
@@ -59,17 +59,29 @@
     </header>
     <main>
       <div class="mx-auto m-4 text-center">
-        <h1>Post Deleted</h1>
+        <h1>Search</h1>
       </div>
-      <form id="removePostForm">
+      <form id="searchProfileForm">
         <div class="container-sm p-5">
           <div class="mb-3 w-50 mx-auto">
-            
-          <div class="container text-center">
-            <a href="/index.html" type="submit" class="btn btn-dark">Return to main page</a>
+            <label for="" class="col-form-label">Name</label>
+            <input
+              id="profile"
+              name="text"
+              type="text"
+              name="search"
+              class="form-control"
+              placeholder="Search for a profile"
+              required
+            />
           </div>
         </div>
       </form>
+      <section class="m-5">
+        <div class="container">
+          <div class="row targetContainer"> </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container text-center"> &copy; </div>

@@ -8,7 +8,6 @@ export function setCreatePostFormListener() {
     const form = event.target;
     const formData = new FormData(form);
     const post = Object.fromEntries(formData.entries());
-
     createPost(post);
   });
 }
